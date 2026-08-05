@@ -1,6 +1,6 @@
 # vcpkg-registry
 
-Vcpkg registry of private and custom ports within *gerber-dmra*
+Vcpkg registry of private and custom ports 
 
 ## Adding Ports
 
@@ -31,4 +31,3 @@ Never change the name of a dependency or its CMake targets for a specific build 
 This would allow multiple instances of a dependency in a project, causing multiple definition errors
 at the least, and mysterious runtime bugs at the worst. This isn't specific to vcpkg.
 
-## Port Descriptions
