@@ -31,3 +31,11 @@ Never change the name of a dependency or its CMake targets for a specific build 
 This would allow multiple instances of a dependency in a project, causing multiple definition errors
 at the least, and mysterious runtime bugs at the worst. This isn't specific to vcpkg.
 
+
+stateDiagram-v2
+[*] --> [Type definition]
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
