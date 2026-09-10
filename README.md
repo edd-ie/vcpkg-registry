@@ -32,24 +32,3 @@ This would allow multiple instances of a dependency in a project, causing multip
 at the least, and mysterious runtime bugs at the worst. This isn't specific to vcpkg.
 
 
-```mermaid
-flowchart LR
-  subgraph Client
-    UI[Web app]
-    Cache[(Local cache)]
-  end
-  subgraph Services
-    API[API gateway]
-    Auth[Auth service]
-    Orders[Order service]
-  end
-  subgraph Storage
-    DB[(Orders DB)]
-  end
-  UI --> API
-  UI --> Cache
-  API --> Auth
-  API --> Orders
-  Orders --> DB
-  Auth -. token .-> UI
-```
